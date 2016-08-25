@@ -1,5 +1,8 @@
 hexo-theme-yilia
 ================
+    
+  Warning For Opr: hexo-generator-marked  remove [<a href="#' + id + '" class="headerlink" title="' + stripHTML(text) + '"></a>],
+  otherwise the pgg.js is didn't work well! 
 
 _在此按个人需求作了一些自定义， 详见 http://ccjoe.github.io_
 - 新增文章内 TOC导航
