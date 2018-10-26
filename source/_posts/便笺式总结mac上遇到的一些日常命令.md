@@ -1,4 +1,4 @@
-title: 便笺式总结mac上遇到的一些日常命令
+title: 便笺式总结mac or windows上遇到的一些日常命令
 date: 2015-09-03 22:43:02
 tags: [mac, 便笺, linux, git, svn]
 ---
@@ -90,7 +90,10 @@ git branch -r #获取远程分支信息
 git branch -l #获取本地分支信息
 git remote
 git checkout --track origin/test  #将远程分支获取为本地分支
+git checkout --orphan gh-pages   # 创建一个orphan的分支，这个分支是独立的
+
 ```
+ 
 
 ## SVN
 SVN:
@@ -194,3 +197,27 @@ hexo g == hexo generate
 hexo s == hexo server
 hexo d == hexo deploy
 ```
+
+## window平台
+
+1.查找端口使用的应用PID
+netstat -aon|findstr "5389"
+
+2.根据PID查找PID的应用Name
+tasklist|findstr "11920"
+
+## docker 
+
+docker ps
+docker port
+docker stop web
+docker rm web
+boot2docker status
+boot2docker stop
+boot2docker restart
+
+docker-machine ls
+docker-machine create --driver virtualbox my-default
+
+docker search ubuntu
+docker run -v 
